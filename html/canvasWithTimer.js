@@ -76,10 +76,6 @@ function drawCanvas() {
   context.strokeStyle = 'blue'
   context.fillStyle = 'red'
 
-  //used for debugging. No used in the simulation
-  movingString.stringWidth = context.measureText(movingString.word).width
-  context.fillText(movingString.word, movingString.x, movingString.y)
-
   //draw the stones
   allStones.draw(context, iceSurface)
   if (shootingCue != null) shootingCue.draw(context)
