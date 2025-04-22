@@ -1,6 +1,4 @@
 function handleTimer() {
-  movingString.x = (movingString.x + 1 * movingString.xDirection)
-  movingString.y = (movingString.y + 1 * movingString.yDirection)
 
   allStones.advance(iceSurface.getShootingArea())
   for (let stone1 of allStones.getCollection()) {
@@ -17,12 +15,6 @@ function handleTimer() {
     score = iceSurface.getCurrentScore(allStones)
     enableShooting = true
   }
-
-  //keep moving string within canvas bounds
-  if (movingString.x + movingString.stringWidth > canvas.width) movingString.xDirection = -1
-  if (movingString.x < 0) movingString.xDirection = 1
-  if (movingString.y > canvas.height) movingString.yDirection = -1
-  if (movingString.y - movingString.stringHeight < 0) movingString.yDirection = 1
 
   drawCanvas()
 }

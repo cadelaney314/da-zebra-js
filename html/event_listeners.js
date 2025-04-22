@@ -4,13 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //add mouse down listener to our canvas object
   document.getElementById('canvas1').addEventListener('mousedown', handleMouseDown)
 
-  //add key handler for the document as a whole, not separate elements.
-  document.addEventListener('keydown', handleKeyDown)
-  document.addEventListener('keyup', handleKeyUp)
-
   //add button handlers
-  //add listener to submit button
-  document.getElementById('submit_button').addEventListener('click', handleSubmitButton)
   document.getElementById('JoinAsHomeButton').addEventListener('click', handleJoinAsHomeButton)
   document.getElementById('JoinAsVisitorButton').addEventListener('click', handleJoinAsVisitorButton)
   document.getElementById('JoinAsSpectatorButton').addEventListener('click', handleJoinAsSpectatorButton)
@@ -29,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
   btn = document.getElementById("JoinAsSpectatorButton")
   btn.disabled = false //enable button
   btn.style.backgroundColor= SPECTATOR_PROMPT_COLOUR
-
-
 
   drawCanvas()
 })

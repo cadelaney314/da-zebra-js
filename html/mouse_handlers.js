@@ -2,11 +2,7 @@ function getCanvasMouseLocation(e) {
   //provide the mouse location relative to the upper left corner
   //of the canvas
 
-  /*
-  This code took some trial and error. If someone wants to write a
-  nice tutorial on how mouse-locations work that would be great.
-  */
-  let rect = canvas.getBoundingClientRect()
+   let rect = canvas.getBoundingClientRect()
 
   //account for amount the document scroll bars might be scrolled
 

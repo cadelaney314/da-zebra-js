@@ -1,13 +1,8 @@
-2406 Collision Math Demo
-
-(c) Louis D. Nel 2022
-
-Install: (Assumes node.js and npm are installed.)
-No extra NPM modules are needed.
+Single-client curling game javascript application.
 
 Launch:
 node server.js
 
 Testing:
-Use Chrome browser to visit:
+Use browser to visit:
 http://localhost:3000/curling.html
